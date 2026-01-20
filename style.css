@@ -325,3 +325,117 @@ body {
     }
 }
 
+
+
+
+/* Episode Section */
+.episodes {
+     padding: 80px 8%; 
+     background-color: var(--bg-dark); 
+    
+}
+
+.episode-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.episode-card {
+    background: var(--card-bg);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.thumbnail {
+    position: relative;
+    height: 200px;
+}
+
+.thumbnail img { 
+    width: 100%; 
+    height: 100%;
+     object-fit: cover;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; 
+    height: 50px;
+    background: var(--gradient-main);
+    border-radius: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 1.2rem; 
+    cursor: pointer;
+}
+
+.card-content { 
+    padding: 25px; 
+}
+.card-content h3 { 
+    margin-bottom: 10px;
+     font-size: 1.2rem; 
+}
+.card-content p {
+     color: var(--text-muted); 
+     font-size: 0.9rem; 
+     margin-bottom: 15px; 
+}
+.meta { color: var(--accent-green); 
+    font-size: 0.8rem; 
+    font-weight: bold; 
+}
+
+/* Host Section */
+.host-section { 
+    padding: 80px 8%; 
+    text-align: center; 
+}
+
+.host-card {
+    background: var(--card-bg);
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    text-align: left;
+}
+
+.host-img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--accent-purple);
+}
+
+.host-info h3 { 
+    font-size: 1.8rem;
+     margin-bottom: 10px;
+     }
+.host-info p { 
+    color: var(--text-muted);
+     margin-bottom: 20px; 
+    }
+
+.social-icons { 
+    display: flex;
+    gap: 15px; 
+    font-size: 1.2rem; 
+}
+.social-icons i { 
+    background: var(--gradient-main); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    cursor: pointer;
+}
+
